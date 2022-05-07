@@ -1,0 +1,45 @@
+.advantage {
+    background: #F6F6F6;
+    padding: 70px 0 67px 0;
+    @media (max-width: $tablet-width) {
+        padding: 40px 0 37px 0;
+    }
+    &__block {
+        width: 277px;
+    }
+    &__list {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        @media (max-width: $tablet-width) {
+            margin-top: 40px;
+        }
+        @media (max-width: $mobile-width) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+    }
+    &__subheader {
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 35px;
+    }
+    &__text {
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 20px;
+        span {
+            color: #FF0000;
+            text-transform: uppercase;
+            font-family: 'MuseoModerno';
+        }
+    }
+}

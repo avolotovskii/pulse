@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,CAAC,AAAC,CACE,WAAW,CAAE,6BAA6B,CAC7C,AAED,AAAA,UAAU,AAAC,CACP,SAAS,CAAE,GAAG,CACd,MAAM,CAAE,MAAM,CACjB",
+    "sources": [
+        "../blocks/style.scss",
+        "../base/_variables.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}
