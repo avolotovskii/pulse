@@ -2,9 +2,23 @@
     min-height: 680px;
     padding: 100px 0 92px 0;
     background: url(../../img/bg2.jpg) center (center/cover) no-repeat;
+    @media (max-width: $tablet-width) {
+        padding: 80px 0 70px 0;
+    }
+    @media (max-width: $mobile-width) {
+        padding: 40px 0 30px 0;
+    }
     &__descr {
         font-size: 20px;
         font-weight: 500;
         color: #fff;
+        @media (max-width: $tablet-width) {
+            margin: 15px;
+            font-size: 15px;
+        }
+        @media (max-width: $mobile-width) {
+            margin: 15px;
+            font-size: 10px;
+        }
     }
 }

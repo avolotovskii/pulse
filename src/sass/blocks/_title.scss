@@ -13,4 +13,12 @@
         text-align: left;
         color: #fff
     }
+    @media (max-width: $tablet-width) {
+        margin: 15px;
+        font-size: 23px;
+    }
+    @media (max-width: $mobile-width) {
+        margin: 15px;
+        font-size: 16px;
+    }
 }
