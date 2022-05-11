@@ -47,4 +47,68 @@ $(document).ready(function() {
             $('.overlay, #order').fadeIn('slow');
         })
     });
+
+    /*     $("#consultation form").validate({
+            rules: {
+                // simple rule, converted to {required:true}
+                name: "required",
+                phone: {
+                    required: true,
+                    minlength: 11
+                },
+                // compound rule
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Введите Ваше имя",
+                },
+                phone: {
+                    required: "Введите Ваш телефон",
+                    minlength: jQuery.validator.format("Необходимо ввести минимум {0} цифр")
+
+                },
+                email: {
+                    required: "Введите Вашу электронную почту",
+                }
+            }
+        }); */
+
+    function valideForm(form) {
+        $(form).validate({
+            rules: {
+                // simple rule, converted to {required:true}
+                name: "required",
+                phone: {
+                    required: true,
+                    minlength: 11
+                },
+                // compound rule
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Введите Ваше имя",
+                },
+                phone: {
+                    required: "Введите Ваш телефон",
+                    minlength: jQuery.validator.format("Необходимо ввести минимум {0} цифр")
+
+                },
+                email: {
+                    required: "Введите Вашу электронную почту",
+                }
+            }
+        });
+    };
+
+    valideForm('#consultation form');
+    valideForm('#consultation-form form');
+    valideForm('#order form');
 });

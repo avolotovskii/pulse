@@ -29,4 +29,11 @@
     &_mt-25 {
         margin: 36px auto;
     }
+    .error {
+        margin-bottom: 15px;
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+    }
 }
