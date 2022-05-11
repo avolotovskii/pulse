@@ -48,35 +48,6 @@ $(document).ready(function() {
         })
     });
 
-    /*     $("#consultation form").validate({
-            rules: {
-                // simple rule, converted to {required:true}
-                name: "required",
-                phone: {
-                    required: true,
-                    minlength: 11
-                },
-                // compound rule
-                email: {
-                    required: true,
-                    email: true
-                }
-            },
-            messages: {
-                name: {
-                    required: "Введите Ваше имя",
-                },
-                phone: {
-                    required: "Введите Ваш телефон",
-                    minlength: jQuery.validator.format("Необходимо ввести минимум {0} цифр")
-
-                },
-                email: {
-                    required: "Введите Вашу электронную почту",
-                }
-            }
-        }); */
-
     function valideForm(form) {
         $(form).validate({
             rules: {
@@ -111,4 +82,22 @@ $(document).ready(function() {
     valideForm('#consultation form');
     valideForm('#consultation-form form');
     valideForm('#order form');
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
