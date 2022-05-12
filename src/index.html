@@ -8,11 +8,13 @@
     <title>Pulse</title>
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a class="header__logo">
@@ -41,10 +43,10 @@
                         <img src="icon/019_timer_time_stopwatch_2-64.png" alt="timer"> Время подбора: 10 минут
                     </div>
                     <div class="promo__icon">
-                        <img src="icon/app 08 hand cart 64.png" alt="hand cart"> Бесплатная доставка
+                        <img src="icon/app_hand_cart.png" alt="hand cart"> Бесплатная доставка
                     </div>
                     <div class="promo__icon">
-                        <img src="icon/messages 64.png" alt="messages"> Ответим на все вопросы
+                        <img src="icon/messages_64.png" alt="messages"> Ответим на все вопросы
                     </div>
                 </div>
                 <button data-modal="consultation" class="button button_main">
@@ -70,7 +72,7 @@
                     </div>
                 </div>
                 <div class="advantage__block">
-                    <img class="advantage__icon" src="icon/heart.png" alt="heart">
+                    <img class="advantage__icon advantage__icon_animated" src="icon/heart.png" alt="heart">
                     <h3 class="advantage__subheader">Заботимя о здоровье</h3>
                     <div class="advantage__text">
                         Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -100,22 +102,22 @@
             </form>
         </div>
     </section>
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
-                    <img src="img/Слайд №1.jpg" alt="">
+                    <img src="img/sl_1.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/Слайд №2.jpg" alt="">
+                    <img src="img/sl_2.jpg" alt="">
                 </div>
                 <div>
-                    <img src="img/Слайд №3.jpg" alt="">
+                    <img src="img/sl_3.jpg" alt="">
                 </div>
             </div>
 
         </div>
-    </section>
+    </div>
     <section class="catalog">
         <div class="container">
             <h2 class="title">
@@ -387,7 +389,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="reviews-box">
+            <div class="reviews-box wow animate__animated animate__fadeInUp" data-wow-duration=" 2s " data-wow-delay=".4s">
                 <img src="img/photo_1.jpg" alt="user photo" class="reviews-box__img">
                 <div class="reviews-box__text">
                     <div class="reviews-box__name">Ирина Иванченко</div>
@@ -399,7 +401,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews-box">
+            <div class="reviews-box wow animate__animated animate__fadeInUp" data-wow-duration=" 2s " data-wow-delay=".4s">
                 <img src="img/photo_2.jpg" alt="user photo" class="reviews-box__img">
                 <div class="reviews-box__text">
                     <div class="reviews-box__name">Иван Сёмочкин</div>
@@ -411,7 +413,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews-box">
+            <div class="reviews-box wow animate__animated animate__fadeInUp" data-wow-duration=" 2s " data-wow-delay=".4s">
                 <img src="img/photo_3.jpg" alt="user photo" class="reviews-box__img">
                 <div class="reviews-box__text">
                     <div class="reviews-box__name">Юлия Дашкина</div>
@@ -467,11 +469,15 @@
         </div>
 
     </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <a href="#up" class="pageup">
+        <img src="icon/circle-up-solid.svg" alt="up">
+    </a>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
