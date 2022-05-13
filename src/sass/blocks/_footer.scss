@@ -10,8 +10,13 @@
         height: 210px;
         background-color: $main-color;
         padding: 50px 68px 30px 68px;
+        @media (max-width: $mobile-width) {
+            width: 100%;
+            padding: 50px 0 30px 0;
+        }
     }
     &__addr {
+        display: block;
         margin-bottom: 36px;
         color: #fff;
         font-size: 20px;

@@ -18,11 +18,15 @@
         @media (max-width: $mobile-width) {
             flex-direction: column;
             align-items: center;
+            margin-top: 20px;
         }
     }
     &__icon {
         display: block;
         margin: 0 auto;
+        @media (max-width: $tablet-width) {
+            padding: 20px 0 0 0;
+        }
     }
     &__subheader {
         text-align: center;
